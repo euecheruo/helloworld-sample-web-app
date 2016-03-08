@@ -1,0 +1,18 @@
+{% trans_default_domain 'FOSUserBundle' %}
+<div id="wrapper">
+	<div id="container">
+		<div id="welcome">
+			<h1>User Registration</h1>
+			<p>already have an account? please goto <a href="{{ path('fos_user_security_login') }}">login</a> </p>
+		</div>		
+		<div id="status">
+				{{ form_start(form, { 'action': path('fos_user_resetting_reset', {'token': token}), 'attr': { 'class': 'fos_user_resetting_reset' } }) }}
+				{{ form_row(form.plainPassword.first) }}
+				{{ form_row(form.plainPassword.second) }}
+				<button class="btn-large" type="submit" name="action">
+				  {{ 'resetting.reset.submit'|trans }}
+				</button>
+			{{ form_end(form) }}
+		</div>
+	</div>
+</div>

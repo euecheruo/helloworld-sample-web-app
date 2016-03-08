@@ -1,0 +1,14 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+reportindexpage:
+    path:  /report/
+    defaults: { _controller: AppBundle:Report:index }
+
+#state_ajax:
+#    path:     /report/
+#    defaults: { _controller: AppBundle:Registration:stateAjax }
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
