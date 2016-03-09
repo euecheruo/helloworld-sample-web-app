@@ -41,7 +41,7 @@ class User extends BaseUser
      * )
      * @Assert\Regex(
      * 		pattern ="/^\S*(?=\S{8,})(?=\S*[a-z])(?=\S*[A-Z])(?=\S*[\d])(?=\S*[\W])\S*$/",
-     * 		message = "Must contain at least one lowercase letter, one uppercase letter and least one number"
+     * 		message = "Must contain at least one lowercase letter, at least one uppercase letter, at least one number and at least one special character"
      * )
      * @Assert\NotBlank(
      * 		message = "Please enter your Password"
