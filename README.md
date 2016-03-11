@@ -1,6 +1,4 @@
-helloworld.echmondprojects.com
-==============================
+# simple-authentication-symfony-project
+Simple authentication using fos user bundle
 
-A Symfony project created on March 4, 2016, 10:47 am.
-
-# helloworld-sample-web-app
+See Demo: [a link](http://echmondprojects.com/helloworld/web/)
